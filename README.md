@@ -35,3 +35,8 @@ wget --no-check-certificate --quiet \
   4 Параметры по умолчанию 
   5 Поиск начала и даты окончания, что-бы не было лишних дат
   6 
+  
+Как запустить докер файл
+docker load -i image.tar
+docker run -d -p 5000:5000 --name flask-app-test  my_flask_app
+Теперь можно посылать запросы на http://127.0.0.1:5000/openfile
