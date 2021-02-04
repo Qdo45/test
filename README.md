@@ -5,6 +5,7 @@
 2. main.py - основной код 
 3. Unit_test - примеры тестов
 4. Dockerfile - файл для создания контейнера
+5. primer.png - скрин запроса пример
 
 **Параметры апи**
 Все параметры передаются чере form-data
@@ -34,10 +35,10 @@ wget --no-check-certificate --quiet \
   5. Поиск начала и даты окончания, что-бы не было лишних дат
   6. Защита от кривых дат 
   
+
 **Как запустить докер файл**
-
-docker load -i image.tar
-
-docker run -d -p 5000:5000 --name flask-app-test  my_flask_app
+1. Скачать файл образ https://drive.google.com/file/d/1Adv_pT7XOZZtoqiW5ErxnzWtZLKAdZ-k/view?usp=sharing
+2. docker load -i image.tar
+3. docker run -d -p 5000:5000 --name flask-app-test  my_flask_app
 
 Теперь можно посылать запросы на http://127.0.0.1:5000/openfile
